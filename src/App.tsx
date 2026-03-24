@@ -31,7 +31,7 @@ const PROFILE = {
   github: '',
   orcid: '',
   /** Optional: place a portrait in `public/` (e.g. `public/photo.jpg`) and set to `/photo.jpg` */
-  heroImage: '',
+  heroImage: '/ibsa.jpg',
 }
 
 function buildSocialLinks(): SocialLink[] {
