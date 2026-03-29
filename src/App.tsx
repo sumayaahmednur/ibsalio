@@ -20,15 +20,15 @@ const PROFILE = {
   tagline:
     'Senior development practitioner and research leader with a track record of directing multi-million-dollar programs, institutional partnerships, and evidence-led policy initiatives across food systems, climate resilience, and rural transformation.',
   summary:
-    'Ibsa Aliyi Usmane is a senior development and research executive with more than a decade of progressive leadership across academia, consulting, and international development programs. He has led strategy, operations, and delivery for donor-funded initiatives supported by USAID, the European Union, World Bank Group, ACIAR, and the Bill & Melinda Gates Foundation. His work integrates policy design, institutional strengthening, and applied socio-economic research to deliver measurable outcomes for governments, institutions, and communities.',
+    'I hold a PhD in Policy, Institutions and Innovations (Climate Smart Agriculture and Biodiversity Conservation), an MSc in Rural Development, and a BSc in Rural Development and Agricultural Extension. I am a researcher, consultant, development practitioner, and leader with over a decade of experience in research and community development projects, project management, and policy formulation. My research expertise spans food systems, institutions and innovations, entrepreneurship, digital literacy, climate change economics, biodiversity conservation, and sustainable farming practices for both agrarian and pastoralist communities. Throughout my career, I have conducted thorough field research to assess the effectiveness of development interventions, gathering firsthand insights to evaluate project impacts and inform data-driven decision-making. My research outcomes have been published in reputable international journals and presented at national and global conferences, forums, and symposiums. I have successfully managed multimillion-dollar research and development projects both nationally and internationally, funded by organizations including USAID, IDRC, JICA, the EU, the World Bank Group, ACIAR, the Bill & Melinda Gates Foundation, the Ethiopian Red Cross Society, the Netherlands Government through its Embassy in Addis Ababa, and others. I am skilled in data analysis, monitoring and evaluation practices, and effectively communicating complex research findings to diverse stakeholders—from small-scale farmers and local communities to international scientists and policymakers. My work has empowered countless agriculturalists and pastoralists to enhance their economic situations, while my research continues to inform and inspire professionals worldwide. I am a resilient professional.',
   email: 'ibsaaly2012@gmail.com',
   location: 'Harar, Ethiopia',
   linkedin: 'https://www.linkedin.com/in/ibsa-aliyi-usmane-7017b698',
   facebook: 'https://web.facebook.com/ibsa.aliyi.988',
   /** Add URLs when set — shown in Contact and footer (not in hero) */
-  x: '',
+  x: 'https://x.com/Ibsa_A_usmane',
   youtube: '',
-  github: '',
+  gainrep: 'https://www.gainrep.com/profile?un=ibsa.aliyi_usmane',
   orcid: '',
   /** Optional: place a portrait in `public/` (e.g. `public/photo.jpg`) and set to `/photo.jpg` */
   heroImage: '/ibsa.jpg',
@@ -47,8 +47,8 @@ function buildSocialLinks(): SocialLink[] {
     PROFILE.youtube.trim()
       ? { id: 'youtube', label: 'YouTube channel', href: PROFILE.youtube.trim() }
       : null,
-    PROFILE.github.trim()
-      ? { id: 'github', label: 'GitHub profile', href: PROFILE.github.trim() }
+    PROFILE.gainrep.trim()
+      ? { id: 'gainrep', label: 'GainRep profile', href: PROFILE.gainrep.trim() }
       : null,
     PROFILE.orcid.trim()
       ? { id: 'orcid', label: 'ORCID profile', href: PROFILE.orcid.trim() }
@@ -146,6 +146,153 @@ const leadershipExperience = [
   },
 ]
 
+const ConferenceParticipations = [
+  {
+    organization: 'National Conference on Entrepreneurship Research',
+    title: 'Participant',
+    period: '27 Nov 2025',
+    location: 'Sheraton Addis, Ethiopia',
+  },
+  {
+    organization: 'Food Safety Forum & Public-Private Partnership Workshop',
+    title: 'Participant',
+    period: '19–21 Sep 2024',
+    location: 'Addis Ababa, Ethiopia',
+  },
+  {
+    organization: 'International Conference on Pastoralism in the 21st Century: Trends and Prospects',
+    title: 'Participant',
+    period: '30–31 May 2024',
+  },
+  {
+    organization: 'International Research Conference on Indigenous Knowledge for Innovations and Societal Transformation',
+    title: 'Participant',
+    period: '24 May 2024',
+    location: 'Bule Hora University, Ethiopia',
+  },
+  {
+    organization: 'International Conference on Advance of Science and Technology',
+    title: 'Participant',
+    period: '1–3 Nov 2024',
+  },
+  {
+    organization: 'International Conference on Climate Adaptability and Sustainability: Nile River Basin and the Sudd Wetlands',
+    title: 'Participant',
+    period: '20–21 2023',
+    location: 'USA (Virtual)',
+  },
+  {
+    organization: 'International Conference on Transforming Food System Through Climate Smart Agriculture',
+    title: 'Participant',
+    period: '27–28 Oct 2022',
+  },
+]
+
+const publications = [
+  {
+    title: 'Renewable Energy Resources in Ethiopia for a Green Economy: Policy Review, Challenges, and Opportunities',
+    authors: 'Usmane, I. A., Woreka, B. B., Ahmed, K. K., & Mohammed, L. S.',
+    year: '2025',
+    source: 'Sustainable Development Research in Materials and Renewable Energy Engineering (Springer, Cham)',
+  },
+  {
+    title: 'Examining the Role of Women’s Engagement in Khat Production on Child Nutritional Outcomes',
+    authors: 'Mechlowitz, K. et al., including Usmane, I. A.',
+    year: '2024',
+    source: 'medRxiv',
+  },
+  {
+    title: 'Women’s Empowerment and Child Nutrition in a Context of Shifting Livelihoods in Eastern Oromia, Ethiopia',
+    authors: 'Mechlowitz, K. et al., including Usmane, I. A.',
+    year: '2023',
+    source: 'Frontiers in Nutrition, 10',
+  },
+  {
+    title: 'Prevalence and Load of the Campylobacter Genus in Infants and Associated Household Contacts in Rural Eastern Ethiopia',
+    authors: 'Deblais, L. et al., including Usmane, I. A.',
+    year: '2023',
+    source: 'Applied and Environmental Microbiology, 89(7)',
+  },
+  {
+    title: 'Unravelling the Reservoirs for Colonization of Infants with Campylobacter spp. in Rural Ethiopia: Protocol for a Longitudinal Study',
+    authors: 'Havelaar, A. H. et al., including Usmane, I. A.',
+    year: '2022',
+    source: 'BMJ Open, 12(10)',
+  },
+]
+
+const training = [
+  {
+    title: 'Leadership and Management Capacity Strengthening in African Universities',
+    period: '22–23 Jan 2026',
+    organization: 'Haramaya University',
+    location: 'Ethiopia',
+  },
+  {
+    title: 'Exploring Pathways for Commercial Impact: Turning Scientific Work into Market-Ready Solutions',
+    period: '20–23 Jan 2026',
+    organization: 'Haramaya University',
+    location: 'Ethiopia',
+  },
+  {
+    title: 'Qualitative Data Management and Analysis Using ATLAS.ti',
+    period: '2025',
+    organization: 'Ethiopian Economics Association',
+    location: 'Ethiopia',
+  },
+  {
+    title: 'Food Systems',
+    period: '2023',
+    organization: 'Wageningen Centre for Development Innovation',
+    location: 'Netherlands',
+  },
+  {
+    title: 'Digital and Information Literacy and Research Tools',
+    period: '2021',
+    organization: 'Haramaya University',
+    location: 'Ethiopia',
+  },
+  {
+    title: 'Integrated Decision Support Systems',
+    period: '2021',
+    organization: 'Haramaya University',
+    location: 'Ethiopia',
+  },
+  {
+    title: 'CAGED and ECXAM Projects: Field Data Collection Methods',
+    period: '20–30 Oct 2020',
+  },
+  {
+    title: 'Scientific Report Writing, Data Management, and Analysis Using R Software',
+    period: '2013',
+    organization: 'EIAR',
+    location: 'Ethiopia',
+  },
+]
+
+const memberships = [
+  {
+    organization: 'Ethiopian Economics Association',
+    role: 'Member',
+    period: '2024 – Present',
+  },
+  {
+    organization: 'Ethiopian Society of Horticultural Sciences',
+    role: 'Member',
+    period: '2017 – Present',
+  },
+  {
+    organization: 'Ethiopian Society of Rural Development and Agricultural Extension',
+    role: 'Member',
+    period: '2014 – Present',
+  },
+  {
+    organization: 'Ethiopia Pasture and Rangeland Forum & Ethiopian Society of Animal Production',
+    role: 'Member',
+    period: '2013 – Present',
+  },
+]
+
 const selectedProjects: SelectedProject[] = [
   {
     title: 'Cultivate Africa Future-2 Program',
@@ -206,10 +353,31 @@ const certifications = [
 ]
 
 const education = [
-  'PhD, Policy, Institutions and Innovations - ACE (2021-2024)',
-  'MSc, Development Studies - Haramaya University (2016-2019)',
-  'BSc, Agriculture - Haramaya University (2009-2011)',
+  'PhD, Fellow in Climate Smart Agriculture and Biodiversity Conservation - ACE (2021-present)',
+  'MSc, Master of Science in Rural Development , Haramaya University, Ethiopia | September 2016 – April 2019',
+  'BSc, Bachelor of Science in Agriculture (Rural Development and Agricultural Extension) Haramaya University, Ethiopia | September 2009 – July 2011',
   'Postgraduate Diploma, Teaching in Higher Education - College of Education and Behavioral Sciences',
+]
+
+const referees = [
+  {
+    name: 'Dr. Jemal Yousuf Hassen',
+    title: 'Associate Professor & President',
+    organization: 'Haramaya University',
+    location: 'Ethiopia',
+  },
+  {
+    name: 'Prof. Arie H. Havelaar',
+    title: 'Professor',
+    organization: 'University of Florida',
+    location: 'USA',
+  },
+  {
+    name: 'Dr. Sarah L. McKune',
+    title: 'Associate Professor & Interim Chair',
+    organization: 'Department of Environmental and Global Health, University of Florida',
+    location: 'USA',
+  },
 ]
 
 function getInitialTheme(): 'light' | 'dark' {
@@ -472,6 +640,105 @@ function App() {
           </ul>
         </section>
 
+        <section
+          id="conferences"
+          className="section section-alt"
+          aria-labelledby="conferences-heading"
+        >
+          <h2 id="conferences-heading">Conference Participation</h2>
+
+          <ul className="timeline">
+            {ConferenceParticipations.map((item) => (
+              <li
+                key={`${item.organization}-${item.period}`}
+                className="timeline-item"
+              >
+                <h3>{item.organization}</h3>
+
+                <p className="timeline-role">{item.title}</p>
+
+                <p className="timeline-meta">
+                  {item.period} · {item.location}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section
+  id="publications"
+  className="section"
+  aria-labelledby="publications-heading"
+>
+  <h2 id="publications-heading">Selected Publications</h2>
+
+  <ul className="timeline">
+    {publications.map((pub) => (
+      <li
+        key={`${pub.title}-${pub.year}`}
+        className="timeline-item"
+      >
+        <h3>{pub.title}</h3>
+
+        <p className="timeline-authors">{pub.authors}</p>
+
+        <p className="timeline-meta">
+          {pub.source} · {pub.year}
+        </p>
+      </li>
+    ))}
+  </ul>
+</section>
+
+
+<section
+  id="training"
+  className="section section-alt"
+  aria-labelledby="training-heading"
+>
+  <h2 id="training-heading">Professional Development & Training</h2>
+
+  <ul className="timeline">
+    {training.map((item) => (
+      <li
+        key={`${item.title}-${item.period}`}
+        className="timeline-item"
+      >
+        <h3>{item.title}</h3>
+
+        <p className="timeline-org">{item.organization}</p>
+
+        <p className="timeline-meta">
+          {item.period} · {item.location}
+        </p>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<section
+  id="memberships"
+  className="section"
+  aria-labelledby="memberships-heading"
+>
+  <h2 id="memberships-heading">Professional Memberships</h2>
+
+  <ul className="timeline">
+    {memberships.map((item) => (
+      <li
+        key={`${item.organization}-${item.period}`}
+        className="timeline-item"
+      >
+        <h3>{item.organization}</h3>
+
+        <p className="timeline-role">{item.role}</p>
+
+        <p className="timeline-meta">{item.period}</p>
+      </li>
+    ))}
+  </ul>
+  </section>
+  
         <section id="projects" className="section" aria-labelledby="projects-heading">
           <h2 id="projects-heading">Selected Projects</h2>
           <p className="section-intro">
@@ -502,6 +769,29 @@ function App() {
             ))}
           </ul>
         </section>
+
+        <section
+  id="referees"
+  className="section section-alt"
+  aria-labelledby="referees-heading"
+>
+  <h2 id="referees-heading">Referees</h2>
+
+  <ul className="timeline">
+    {referees.map((ref) => (
+      <li
+      >
+        <h3>{ref.name}</h3>
+
+        <p className="timeline-org">
+          {ref.title}, {ref.organization}
+        </p>
+
+        <p className="timeline-meta">{ref.location}</p>
+      </li>
+    ))}
+  </ul>
+</section>
 
         <section id="credentials" className="section section-alt" aria-labelledby="credentials-heading">
           <h2 id="credentials-heading">Credentials</h2>
