@@ -640,6 +640,37 @@ function App() {
           </ul>
         </section>
 
+        <section id="projects" className="section" aria-labelledby="projects-heading">
+          <h2 id="projects-heading">Selected Projects</h2>
+          <p className="section-intro">
+            Highlights from donor-funded programs and research-led initiatives across agricultural development and
+            institutional partnerships.
+          </p>
+          <ul className="project-grid">
+            {selectedProjects.map((project) => (
+              <li key={project.title}>
+                <article className="project-card">
+                  <h3>{project.title}</h3>
+                  <p>
+                    <strong>Role:</strong> {project.role}
+                  </p>
+                  <p>
+                    <strong>Scope:</strong> {project.scope}
+                  </p>
+                  <p>
+                    <strong>Contribution:</strong> {project.contribution}
+                  </p>
+                  <ul className="project-outcomes">
+                    {project.outcomes.map((outcome) => (
+                      <li key={outcome}>{outcome}</li>
+                    ))}
+                  </ul>
+                </article>
+              </li>
+            ))}
+          </ul>
+        </section>
+
         <section
           id="conferences"
           className="section section-alt"
@@ -738,37 +769,6 @@ function App() {
     ))}
   </ul>
   </section>
-  
-        <section id="projects" className="section" aria-labelledby="projects-heading">
-          <h2 id="projects-heading">Selected Projects</h2>
-          <p className="section-intro">
-
-            <code></code>.
-          </p>
-          <ul className="project-grid">
-            {selectedProjects.map((project) => (
-              <li key={project.title}>
-                <article className="project-card">
-                  <h3>{project.title}</h3>
-                  <p>
-                    <strong>Role:</strong> {project.role}
-                  </p>
-                  <p>
-                    <strong>Scope:</strong> {project.scope}
-                  </p>
-                  <p>
-                    <strong>Contribution:</strong> {project.contribution}
-                  </p>
-                  <ul className="project-outcomes">
-                    {project.outcomes.map((outcome) => (
-                      <li key={outcome}>{outcome}</li>
-                    ))}
-                  </ul>
-                </article>
-              </li>
-            ))}
-          </ul>
-        </section>
 
         <section
   id="referees"
@@ -779,8 +779,7 @@ function App() {
 
   <ul className="timeline">
     {referees.map((ref) => (
-      <li
-      >
+      <li key={`${ref.name}-${ref.organization}`} className="timeline-item">
         <h3>{ref.name}</h3>
 
         <p className="timeline-org">
@@ -823,19 +822,23 @@ function App() {
           </div>
         </section>
 
-        <section id="contact" className="section" aria-labelledby="contact-heading">
-          <h2 id="contact-heading">Contact</h2>
-          <p className="section-lead">
-            Open to executive advisory mandates, institutional partnerships, and research-driven
-            development opportunities.
-          </p>
-          <p className="contact-email">
-            <a href={`mailto:${PROFILE.email}`}>{PROFILE.email}</a>
-          </p>
-          <p className="contact-meta">{PROFILE.location}</p>
-          <p className="contact-social-heading">Social</p>
-          <div className="contact-social-row">
-            <SocialIcons links={SOCIAL_LINKS} />
+        <section id="contact" className="section section-contact" aria-labelledby="contact-heading">
+          <div className="contact-panel">
+            <h2 id="contact-heading">Contact</h2>
+            <p className="section-lead">
+              Open to executive advisory mandates, institutional partnerships, and research-driven development
+              opportunities.
+            </p>
+            <div className="contact-details">
+              <p className="contact-email">
+                <a href={`mailto:${PROFILE.email}`}>{PROFILE.email}</a>
+              </p>
+              <p className="contact-meta">{PROFILE.location}</p>
+            </div>
+            <p className="contact-social-heading">Connect</p>
+            <div className="contact-social-row">
+              <SocialIcons links={SOCIAL_LINKS} />
+            </div>
           </div>
         </section>
       </main>

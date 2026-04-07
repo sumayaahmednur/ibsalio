@@ -28,15 +28,14 @@ function IconMail({ className }: { className?: string }) {
   )
 }
 
-function IconHandshake({ className }: { className?: string }) {
+function IconGainRep({ className }: { className?: string }) {
   return (
-    <img
-      src ="handshake.png"
-      className={className}
-      width={22}
-      height={22}
-      alt="Handshake icon"
-    />
+    <svg className={className} viewBox="0 0 24 24" aria-hidden width={22} height={22}>
+      <path
+        fill="currentColor"
+        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+      />
+    </svg>
   )
 }
 
@@ -87,7 +86,7 @@ function IconORCID({ className }: { className?: string }) {
 const iconMap: Record<string, ReactNode> = {
   linkedin: <IconLinkedIn />,
   email: <IconMail />,
-  gainrep: <IconHandshake />,
+  gainrep: <IconGainRep />,
   x: <IconX />,
   facebook: <IconFacebook />,
   youtube: <IconYouTube />,
